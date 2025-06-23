@@ -1,0 +1,201 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rihla Sustainable Tote Bag</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f7f6;
+      color: #333;
+    }
+    header {
+      background-color: #2e7d32;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      letter-spacing: 2px;
+    }
+    nav {
+      background: #1b5e20;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    section {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    h2 {
+      color: #2e7d32;
+      margin-bottom: 15px;
+      border-bottom: 3px solid #81c784;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+    p {
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+    ul {
+      list-style-type: disc;
+      padding-left: 20px;
+      margin-bottom: 20px;
+    }
+    .features li {
+      margin-bottom: 10px;
+    }
+    .customization {
+      background: #e8f5e9;
+      padding: 15px;
+      border-radius: 6px;
+    }
+    form {
+      background: #c8e6c9;
+      padding: 20px;
+      border-radius: 6px;
+    }
+    form label {
+      display: block;
+      margin-top: 10px;
+      font-weight: 600;
+    }
+    form input, form select, form textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border-radius: 4px;
+      border: 1px solid #81c784;
+      box-sizing: border-box;
+    }
+    form button {
+      margin-top: 15px;
+      background-color: #2e7d32;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      font-size: 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    form button:hover {
+      background-color: #1b5e20;
+    }
+    footer {
+      background: #2e7d32;
+      color: white;
+      text-align: center;
+      padding: 15px 10px;
+      margin-top: 50px;
+    }
+    @media(max-width: 600px) {
+      header h1 {
+        font-size: 1.8rem;
+      }
+      nav a {
+        display: block;
+        margin: 8px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Rihla Sustainable Tote Bag</h1>
+  <p>Carry the Future — One Bag at a Time</p>
+</header>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#features">Features</a>
+  <a href="#customization">Customization</a>
+  <a href="#impact">Impact</a>
+  <a href="#order">Order</a>
+</nav>
+
+<section id="about">
+  <h2>About Rihla</h2>
+  <p>
+    Rihla is a sustainable tote bag made entirely from recycled textile waste and crafted by local women tailors. The name "Rihla" means "journey" — symbolizing a journey towards a greener, more conscious lifestyle.
+  </p>
+</section>
+
+<section id="features">
+  <h2>Features</h2>
+  <ul class="features">
+    <li>Made from 100% recycled textile waste</li>
+    <li>Removable laptop pouch for versatility</li>
+    <li>Dual bottle sleeves for easy organization</li>
+    <li>Wide, comfortable straps for everyday use</li>
+    <li>Unique QR code on every bag linking to your personal eco-impact</li>
+    <li>Hand-stitched by empowered local women</li>
+  </ul>
+</section>
+
+<section id="customization" class="customization">
+  <h2>Customization</h2>
+  <p>
+    Personalize your Rihla tote with fabric choices, patches, and messages. Design online or join our school workshops to handcraft your own unique bag. Express yourself sustainably!
+  </p>
+</section>
+
+<section id="impact">
+  <h2>Our Environmental Impact</h2>
+  <p>
+    Every Rihla bag helps reduce textile waste by up to 0.6 kg. By choosing Rihla, you support the circular economy, empower women tailors, and promote sustainability education.
+  </p>
+</section>
+
+<section id="order">
+  <h2>Order Your Rihla Tote</h2>
+  <form id="order-form" action="#" method="POST">
+    <label for="name">Full Name</label>
+    <input type="text" id="name" name="name" placeholder="Your full name" required />
+
+    <label for="email">Email Address</label>
+    <input type="email" id="email" name="email" placeholder="your.email@example.com" required />
+
+    <label for="fabric">Choose Fabric</label>
+    <select id="fabric" name="fabric" required>
+      <option value="" disabled selected>Select a fabric</option>
+      <option value="earth-tones">Earth Tones</option>
+      <option value="bold-patterns">Bold Patterns</option>
+      <option value="classic-black">Classic Black</option>
+      <option value="mixed-recycled">Mixed Recycled</option>
+    </select>
+
+    <label for="custom-message">Custom Message or Name (optional)</label>
+    <input type="text" id="custom-message" name="custom-message" placeholder="Add your personal touch" maxlength="30" />
+
+    <label for="quantity">Quantity</label>
+    <input type="number" id="quantity" name="quantity" min="1" max="10" value="1" required />
+
+    <label for="comments">Additional Comments</label>
+    <textarea id="comments" name="comments" rows="3" placeholder="Any special requests?"></textarea>
+
+    <button type="submit">Place Order</button>
+  </form>
+</section>
+
+<footer>
+  <p>© 2025 Rihla Sustainable Tote Bags | Made with ♻️ and ❤️</p>
+</footer>
+
+</body>
+</html>
